@@ -1,0 +1,79 @@
+<!-- Q1. What is virtual DOM?
+Ans- (i) Virtual DOM is a concept used in React, where a lightweight copy of the actual DOM is created as a virtual representation of the DOM.
+     (ii) It allows React to update the virtual DOM instead of the real DOM when there are changes in the state of the application.
+     (iii) Manipulating the virtual DOM is faster because it doesn't involve rendering on the screen.
+     (iv) When a change occurs, a new virtual DOM tree is created and compared with the previous virtual DOM tree to identify the changes.
+     (v) React then updates only the necessary elements in the real DOM based on the identified changes, using batch updates to optimize the rendering process. This approach, known as reconciliation, significantly improves performance by minimizing unnecessary re-rendering of the entire UI. -->
+
+
+<!-- Q2. What is SPA
+Ans-(i) SPA stands for Single-Page Application.
+    (ii) It is a web application or website that operates within a single web page, dynamically updating its content without requiring a full page reload.
+    (iii) The initial HTML, CSS, and JavaScript resources are loaded once in an SPA.
+    (iv) Dynamic content updates occur without refreshing the entire page.
+    (v) Interactions and content updates are managed through asynchronous server requests or DOM manipulation. -->
+
+
+<!-- Q3. What is difference between class and functional component
+Ans- Class components and functional components are two different ways of defining components in React. Here are the main differences between them:
+
+    Class Components:
+
+    (i)Syntax: Class components are defined using ES6 class syntax and extend the base React.Component class.
+    (ii)State Management: Class components have access to the state object and can define and manage their own state using the setState() method.
+    (iii)Lifecycle Methods: Class components can utilize lifecycle methods such as componentDidMount(), componentDidUpdate(), and componentWillUnmount() to perform actions at specific stages of the component's lifecycle.
+    (iv)Complex Logic: Class components are suitable for handling more complex logic and state management, as they can encapsulate multiple methods and maintain their own internal state.
+    (v)Legacy Support: Class components have been used in React since its earlier versions and may be necessary in certain scenarios, especially when working with older codebases or libraries.
+
+    Functional Components:
+
+    (i)Syntax: Functional components are defined as plain JavaScript functions. They receive props as input and return JSX to describe the component's UI.
+    (ii)State Management: Functional components do not have their own state. To manage state, you can use React hooks such as useState() or rely on state management libraries like Redux.
+    (iii)Simplicity: Functional components are generally simpler and easier to read and understand, especially for simpler components that don't require complex state management or lifecycle methods.
+    (iv)Performance: Functional components can be more performant as they don't carry the overhead of creating instances and managing lifecycle methods that class components have. However, this performance difference is usually negligible unless dealing with a large number of components.
+    (v)Hooks: Functional components are the primary approach encouraged by React, especially with the introduction of hooks. Hooks provide a way to use state and other React features within functional components, making them more powerful and flexible.
+
+    In recent versions of React, functional components have gained popularity due to their simplicity, reusability, and improved performance with the introduction of hooks. It is recommended to use functional components whenever possible, unless you specifically require the features and capabilities provided by class components. -->
+
+
+<!-- Q4. What does mean by state and its use in react?
+Ans- (i) In the context of React, "state" refers to an internal data storage mechanism that allows components to manage and maintain their own data.     
+     (ii) It represents the current state of the component and can be updated over time. 
+     (iii)The state is an essential concept in React because it enables components to be dynamic and interactive.
+
+    Uses-
+    (i) Storing component data: State allows you to store and manage data within a component.
+    (ii) Rendering dynamic content: State helps render different content or components based on the current state.
+    (iii)Managing user interactions: State enables you to handle and respond to user interactions.
+    (iv) Controlling component behavior: State can be used to control the behavior of a component.
+    (v) Implementing data fetching and asynchronous operations: State is commonly used to manage loading and error states during data fetching.
+    (vi) Passing data between components: State can be lifted up to a higher-level component and then passed down as props to child components.4
+
+        Overall, state in React provides a way to manage and update data within components, enabling dynamic and interactive user interfaces. -->
+    
+    
+<!-- Q5. What is JSX and why do we use it instead of js?
+Ans- JSX is a syntax extension for JavaScript that allows you to write HTML-like code within JavaScript. It is a fundamental part of React and is  used to define the structure and appearance of components.
+
+    Here are a few reasons why JSX is used instead of plain JavaScript for defining component structure in React:
+
+    (i)Declarative syntax: JSX offers a syntax similar to HTML, making it more intuitive and readable. It allows for clear and concise descriptions of component structure and hierarchy.
+
+    (ii)Component composition: JSX facilitates the combination of components by enabling easy nesting and passing of props. This allows for the creation of reusable and modular component structures, forming a tree-like arrangement.
+
+    (iii)Efficient updates: JSX aids React in optimizing the rendering process. Through the use of the Virtual DOM, React can selectively update only the necessary parts of the user interface when there are changes in state or props. This leads to improved performance.
+
+    (iv)JavaScript integration: JSX seamlessly integrates with JavaScript code. By utilizing curly braces {}, JavaScript expressions can be embedded within JSX. This enables dynamic content generation, calculations, and access to variables within the component.
+
+    (v)Static type checking: JSX works effectively with static type checking tools like TypeScript or Flow. These tools analyze JSX code during compilation, providing type checking capabilities. This helps catch potential errors and enhances the overall reliability of the code. -->
+
+
+<!-- Q6. What is package.json?
+Ans- It's the package.json file that enables npm to start your project, run scripts, install dependencies, publish to the NPM registry, and many other useful tasks. -->
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+<!-- Q1. What is the Difference between react and react native? Which one is library or framework?
+Ans- 	ReactJS	                                    React Native
+                          
+1.	The ReactJS initial release was in 2013.	    The React Native initial release was in 2015.
+2.	It is used for developing web applications.	    It is used for developing mobile applications.
+3.	It can be executed on all platforms.	        It is not platform independent. It takes more effort to be executed on all platforms.
+4.	It uses a JavaScript library and CSS for        It comes with built-in animation libraries.
+     animations.	
+5.	It uses React-router for navigating web         It has built-in Navigator library for navigating mobile applications.
+    pages.	
+6.	It uses HTML tags.	                            It does not use HTML tags.
+7.	It can use code components, which saves         It can reuse React Native UI components & modules which allow hybrid apps to render natively.
+    a lot of valuable time.	
+8.	It provides high security.	                    It provides low security in comparison to ReactJS.
+9.	In this, the Virtual DOM renders the            In this, Native uses its API to render code for mobile applications.
+    browser code.	 -->
+
+
+<!-- Q2. What is the package name you are using for routing?
+Ans- React Router -->
+
+<!-- Q3. Routing Implementation
+Ans- (i) Routing implementation involves configuring routing protocols and algorithms in a computer network.
+     (ii) Static routing requires manual configuration of routing tables.
+     (iii) Dynamic routing protocols like RIP, OSPF, and BGP automatically update routing tables based on network changes.
+     (iv) Implementation involves configuring routers with the appropriate protocols and parameters based on network requirements. -->
+
+<!-- Q4.How do you pass data from parent to child?
+Ans - In React, you can pass data from a parent component to a child component by using props. 
+      Props (short for properties) allow you to pass data and functions from a parent component to its child components.
+
+To pass data from a parent component to a child component:
+
+(i)In the parent component, define the data you want to pass as attributes (props) when rendering the child component. For example:
+
+    function ParentComponent() {
+  const data = "Hello, Child!";
+  return <ChildComponent message={data} />;
+    }
+
+(ii)In the child component, access the passed data through the props object. For example:
+
+    function ChildComponent(props) {
+  return <p>{props.message}</p>;
+    }
+
+    In this example, the parent component ParentComponent passes the data variable as a prop called message when rendering the ChildComponent. In the child component ChildComponent, the props object is received as a parameter, and the value of message prop is accessed using props.message. It can be rendered inside a paragraph element using {props.message}.
+
+    By passing data through props, the child component can access and use the data passed from its parent component. Remember that props are read-only, meaning the child component cannot modify the values received via props directly. If the child component needs to modify the data, you can pass down functions as props, and the child component can call those functions to update the data in the parent component. -->
+
+<!-- Q5. What is lazy loading in react ?
+Ans- Lazy loading is the technique of rendering only-needed or critical user interface items first, then quietly unrolling the non-critical items later.
+    For example, you can initially load the components and modules related to user login and registration. Then, you can load the rest of the components based on user navigation. -->
+
+
+<!-- Q6. Difference b/w Stateful and stateless Component?
+Ans-(i) State Management: Stateful components maintain a record of their state, whereas Stateless components do not.
+
+    (ii) Reusability: Stateless components are more easily reusable as they do not maintain a state, while Stateful components may be limited in their reuse as they maintain a state.
+
+    (iii) Scalability: Stateless components are more scalable as they do not maintain state, while Stateful components can lead to scalability issues as they hold state in memory.
+
+    (iv) Testing: Stateless components are easier to test as they have no state to manage, while Stateful components require testing to ensure the correct state is being maintained.
+
+    (v) Performance: Stateless components generally perform better as they do not need to manage state, while Stateful components may have performance overhead due to state management.
+
+    (vi) Complexity: Stateful components are generally more complex as they need to manage state, while Stateless components are simpler as they do not maintain state.
+
+    (vii) Dependency: Stateful components are dependent on their state, while Stateless components are not dependent on any state and can be treated as pure functions.
+    
+    (viii) Persistence: Stateful components persist their state across multiple user sessions, while Stateless components do not. -->
+
+
+
+how do u switch one component to another with condtion rendering
+
+
+
+Difference between Axios and fetch
+What is UseState Hook ?(Implementation)
+What is useEffect Hook ?(Implementation)
+What is UseReducer Hook ?(Implementation)
+What is UseMemo Hook ?(Implementation)
+
+
+
+
